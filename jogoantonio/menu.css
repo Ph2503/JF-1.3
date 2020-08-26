@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    outline: none;
+}
+#check{
+    display: none;
+}
+#menu {
+    width:20px;
+    transition: all .5s;
+    
+    border-top-right-radius: 4px ;
+    border-bottom-right-radius: 4px;
+}
+#icone {
+    
+    position: fixed;
+    margin: 15px;
+    z-index: 1;
+    transition: all .4s;
+
+}
+
+.barra{
+    background-color: rgba(120, 143, 243, 0.465);
+    height: 100%;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px;
+    width: 200px;
+    position: fixed;
+    transition: all .5s ;
+    left: -100%;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    position:absolute;
+    top: 60px;
+
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.link {
+    background-color: rgba(255, 255, 255, 0);
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px;
+    padding: 30px;
+    transition: all .2s;
+    outline: none;
+    border: none;
+    width: 190px;
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    
+}
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.575);
+}
+.link:active {
+    transition: all .2s;
+    text-decoration: none;
+    outline: none;
+    transition: all .2s;
+    color: white;
+    background-color: black;
+}
+#check:checked ~ .barra {
+    left: 0%;
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px;
+}
+#check:checked ~ #icone {
+    transition: all .4s;
+    border-radius: 100%;
+    transform: rotate(90deg);
+}
+#check:checked ~ #menu {
+    transition: all .5s;
+    border-top-right-radius: none;
+    border-bottom-right-radius: none;
+}
+
+#pinfo {
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 13px;
+    margin-left: 24px;
+    margin-top: -29px;
+}
+#info {
+    outline: none;
+    border: none;
+    width: auto;
+    height: 1px;
+    margin: 96% 20px auto;
+    
+}
+#menu-info {
+    width: 16px;
+
+}
+@media (max-height: 450px){
+    .link {
+        padding: 14px;
+    }
+    .barra {
+        height: calc(100% + 20px);
+    }
+    #contato {
+        height: calc(100% + 20px);
+    }
+    #info {
+        margin: 25% 20px auto;
+    }
+}
+@media (max-height: 600px) {
+    #info {
+        margin: 10% 20px auto;
+    }
+}
+@media (min-width: 1024px) {
+    .barra {
+        width: 300px;
+
+    }
+    #menu {
+        width: 30px;
+    }
+}
+@media (max-height: 320px) {
+    .link {
+        padding: 8px;
+    }
+}

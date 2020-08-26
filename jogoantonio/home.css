@@ -1,0 +1,53 @@
+body {
+    margin:0;
+    background: linear-gradient(228deg, #11faed, #1162fa, #000000);
+    background-size: 600% 600%;
+    animation: fundo 13s ease infinite;
+}
+@keyframes fundo {
+    0%{background-position:0% 53%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 53%}
+}
+#inputs {
+    width: 240px;
+    outline: none;
+    height: 20px;
+    margin: 230px auto;
+
+
+}
+
+#nome {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 160px;
+    transition: all .5s;
+    font-family: 'Poppins', 'sans-serif';
+    color: rgb(255, 255, 255);
+    border-top-left-radius: .7em;
+    border-bottom-left-radius: .7em;
+}
+#jogar {
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'Poppins', 'sans-serif';
+    border: none;
+    transition: all .3s;
+    outline: none;
+    border-top-right-radius: .7em;
+    border-bottom-right-radius: .7em;
+}
+#jogar:active {
+    transition: all .3s;
+    background-color: black ;
+    color: white;
+    outline: none;
+}
+@media (max-width: 640px) and (min-width: 400px) {
+    #inputs {
+        margin: 160px auto;
+    }
+}

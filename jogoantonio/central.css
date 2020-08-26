@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    outline: none;
+}
+#name {
+    font-family: 'Poppins', 'sans-serif';
+    font-size: 19px;
+    margin-top:auto;
+    margin-left: 40px;
+    color: green;
+    transition: all .5s;
+}
+#dname {
+    margin-left: 20px;
+    position: fixed;
+  
+    margin-top: 15px;
+    transition: all .5s;
+
+}
+#check:checked ~ #dname {
+    transition: all .5s;
+
+
+}

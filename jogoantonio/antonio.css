@@ -1,0 +1,70 @@
+body {
+  background: rgb(27,234,242);
+  background: radial-gradient(circle, rgba(27,234,242,1) 0%, rgba(51,180,207,1) 0%, rgba(53,159,203,1) 100%);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#titulo {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 50px;
+
+
+}
+#subtitulo {
+    color: white;
+    font-family: 'Questrial', sans-serif;
+}
+@keyframes oi {
+  0%{background-position:0% 53%}
+  50%{background-position:100% 48%}
+  100%{background-position:0% 53%}
+}
+@keyframes loading {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  #loading {
+    animation: oi 3s ease infinite;
+    background: linear-gradient(86deg, #f84e20, #e7f215, #26f200, #00f2da, #003ff2, #9700f2, #f200d8);
+    background-size: 1400% 1400%;
+    border-radius: 1em;
+    position: relative;
+    height: 8px;
+    width: 100%;
+  }
+  
+  #loading::after {
+    animation: loading 6s infinite ease-in-out;
+    border-radius: 1em;
+    background: rgb(255, 255, 255);
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+  }
+  #number {
+    font-size:50px;
+    color:rgba(66, 66, 66, 0);
+  }
+/*font-family: 'Kanit', sans-serif;
+
+font-family: 'Montserrat Subrayada', sans-serif;
+
+font-family: 'Orbitron', sans-serif;
+
+font-family: 'Poppins', sans-serif;
+
+font-family: 'MuseoModerno', cursive;
+
+font-family: 'Questrial', sans-serif;
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+rgb(195, 130, 91)
+
+background: linear-gradient(to right, blue 50%, red 0);
+
+*/
