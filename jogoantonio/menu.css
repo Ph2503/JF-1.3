@@ -28,6 +28,7 @@ body {
 .barra{
     background-color: rgba(120, 143, 243, 0.465);
     height: 100%;
+    box-shadow: 0px 2px 60px rgba(0, 0, 0, 0.3);
     border-top-right-radius: 20px ;
     border-bottom-right-radius: 20px;
     width: 200px;
